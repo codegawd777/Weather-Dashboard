@@ -63,6 +63,7 @@ function getforecast(lat,long) {
            
          </div>
        </div>` 
+      document.querySelector(".forecast").innerHTML += template; 
         }
       }
 
