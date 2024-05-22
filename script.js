@@ -43,7 +43,7 @@ function getcurrentweather(lat,long) {
     })
 }
 function getforecast(lat,long) {
-  const reqUrl = `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&appid=${apikey}&units=imperial`
+  const reqUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&appid=${apikey}&units=imperial`
   fetch(reqUrl)
    .then(res => res.json())
    .then(data => {
