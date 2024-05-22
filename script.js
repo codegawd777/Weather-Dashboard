@@ -16,7 +16,7 @@ searchbtn.addEventListener('click', () => {
 });
 
 function geocode(getCity) {
-  const reqUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${getCity}&limit=5&appid=${apikey}`
+  const reqUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${getCity}&limit=5&appid=${apikey}`
   fetch(reqUrl)
    .then(res => res.json())
    .then(data => {
